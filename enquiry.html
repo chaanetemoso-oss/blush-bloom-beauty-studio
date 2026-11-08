@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Enquiry | Blush & Bloom Beauty Studio</title>
+    <meta name="description" content="Contact Blush & Bloom Beauty Studio to enquire about our beauty treatments, appointments and services.">
+    <meta name="keywords" content="beauty salon enquiry, beauty appointments, contact beauty studio, Blush and Bloom">
+    <meta name="author" content="Blush & Bloom Beauty Studio">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Blush & Bloom Beauty Studio</h1>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Make an Enquiry</h2>
+
+            <p>
+                Fill in the form below and let us know which service
+                you are interested in.
+            </p>
+
+            <form id="enquiry-form" action="#" method="post">
+                <p>
+                    <label for="name">Your name:</label><br>
+                    <input type="text" id="name" name="name" required>
+                </p>
+
+                <p>
+                    <label for="email">Your email:</label><br>
+                    <input type="email" id="email" name="email" required>
+                </p>
+
+                <p>
+                    <label for="service">Service you are interested in:</label><br>
+                    <select id="service" name="service" required>
+                        <option value="">Choose a service</option>
+                        <option value="facial">Facial</option>
+                        <option value="makeup">Makeup</option>
+                        <option value="nails">Nails</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="message">Your message:</label><br>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </p>
+
+                <button type="submit" class="btn">Send Enquiry</button>
+                <p id="form-feedback" style="font-weight: bold; padding: 10px;"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Blush & Bloom Beauty Studio</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
