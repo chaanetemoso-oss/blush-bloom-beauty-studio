@@ -50,7 +50,7 @@ project-folder/
 ├── css/
 │   └── style.css
 ├── images/
-│   └── salon.jpg
+│   └── salon.svg
 └── js/
     └── script.js
 ```
