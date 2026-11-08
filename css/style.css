@@ -1,187 +1,228 @@
-:root {
-  --rose: #f7d7df;
-  --pink: #d96f8a;
-  --deep-pink: #b34c68;
-  --dark: #3a2a2b;
-  --soft: #fffafc;
-  --gold: #d4a373;
-  --shadow: rgba(42, 24, 31, 0.12);
-}
+/*  BASIC STYLING */
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.6;
-  color: var(--dark);
-  background: linear-gradient(to bottom, #fff9fb, #fff1f5);
-}
-
-header {
-  background: linear-gradient(135deg, #fce7ef, #f8d0dc);
-  padding: 1.5rem 1rem;
-  border-bottom: 3px solid var(--rose);
-  text-align: center;
-}
-
-header h1 {
-  margin: 0 0 0.8rem;
-  font-size: clamp(2rem, 3vw, 3rem);
-  color: var(--deep-pink);
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 1rem;
-  padding: 0;
-  margin: 0;
-}
-
-nav a {
-  text-decoration: none;
-  color: var(--dark);
-  font-weight: 600;
-  padding: 0.6rem 1rem;
-  border-radius: 999px;
-  transition: 0.3s ease;
-}
-
-nav a:hover,
-nav a:focus {
-  background: var(--pink);
-  color: white;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff7fa;
 }
 
 main {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 2rem 1rem 3rem;
+    width: 90%;
+    max-width: 1200px;
+    margin: 2rem auto;
 }
 
-section {
-  background: rgba(255, 255, 255, 0.7);
-  border: 1px solid rgba(217, 111, 138, 0.2);
-  border-radius: 18px;
-  box-shadow: 0 8px 18px var(--shadow);
-  padding: 1.5rem;
-  margin-bottom: 1.5rem;
+h1,
+h2,
+h3 {
+    color: #7a2945;
 }
 
-h2, h3 {
-  color: var(--deep-pink);
+h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
 }
 
-.salon-image {
-  display: block;
-  width: 100%;
-  height: auto;
-  max-height: 520px;
-  margin: 1rem 0;
-  border-radius: 14px;
-  background: var(--rose);
-  cursor: pointer;
-  transition: transform 0.3s ease;
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
 }
 
-.salon-image.expanded {
-  transform: scale(1.02);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18);
+h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
 }
 
-.btn {
-  display: inline-block;
-  background: var(--pink);
-  color: white;
-  text-decoration: none;
-  padding: 0.8rem 1.2rem;
-  border-radius: 999px;
-  font-weight: 700;
-  transition: 0.3s ease;
-  border: none;
-  cursor: pointer;
+p {
+    margin-bottom: 1rem;
 }
 
-.btn:hover,
-.btn:focus {
-  background: var(--deep-pink);
+
+/*HEADER */
+
+header {
+    background-color: #fcaadd;
+    padding: 1.5rem 5%;
+    text-align: center;
 }
+
+
+/* NAVIGATION */
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #7a2945;
+    font-weight: bold;
+    padding: 0.6rem 1rem;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: white;
+    color: #c75c7a;
+}
+
+
+/* IMAGES */
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+    border-radius: 10px;
+}
+
+
+/*SERVICES */
 
 .services-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
 }
 
 .service-card {
-  background: #fffafc;
-  border: 1px solid rgba(217, 111, 138, 0.2);
-  border-radius: 16px;
-  padding: 1.2rem;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.04);
+    background-color: white;
+    padding: 1.5rem;
+    border: 1px solid #f0c4d0;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.service-card:hover {
+    transform: translateY(-3px);
+}
+
+
+/* BUTTONS */
+
+button,
+.btn {
+    display: inline-block;
+    background-color: #c75c7a;
+    color: white;
+    border: none;
+    padding: 0.7rem 1.2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover,
+.btn:hover {
+    background-color: #7a2945;
+}
+
+
+/* FORMS */
+
+form {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
 }
 
 label {
-  font-weight: 600;
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 0.3rem;
+    font-weight: bold;
 }
 
-input, select, textarea {
-  width: 100%;
-  max-width: 500px;
-  padding: 0.8rem;
-  margin-top: 0.4rem;
-  border: 1px solid #e7b1c0;
-  border-radius: 10px;
-  font: inherit;
-  background: #fff;
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
 }
 
 textarea {
-  resize: vertical;
+    min-height: 120px;
+    resize: vertical;
 }
-
-form {
-  margin-top: 1rem;
-}
-
-#form-feedback,
-#contact-feedback {
-  margin-top: 1rem;
-  font-weight: bold;
-}
+/* FOOTER */
 
 footer {
-  text-align: center;
-  padding: 1.5rem 1rem;
-  background: #fbeaf0;
-  color: var(--dark);
-  border-top: 2px solid var(--rose);
+    background-color: #7a2945;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 3rem;
 }
 
-.fade-in {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeIn 0.8s ease forwards;
+
+/* 
+   TABLET RESPONSIVE DESIGN */
+
+@media screen and (max-width: 768px) {
+
+    .services-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    nav ul {
+        gap: 0.5rem;
+    }
+
+    h1 {
+        font-size: 1.7rem;
+    }
 }
 
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 
-@media (max-width: 600px) {
-  nav ul {
-    flex-direction: column;
-  }
+/* 
+   MOBILE RESPONSIVE DESIGN
+  */
 
-  section {
-    padding: 1rem;
-  }
+@media screen and (max-width: 480px) {
+
+    body {
+        font-size: 0.95rem;
+    }
+
+    main {
+        width: 94%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0.3rem;
+    }
+
+    .services-container {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
 }
