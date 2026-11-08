@@ -32,7 +32,8 @@ document.addEventListener("DOMContentLoaded", () => {
     section.style.animationDelay = (index * 0.1) + "s";
   });
 
-  const salonImage = document.querySelector("img[src='images/salon.jpg']");
+  // Target the homepage image by class so the behavior stays in sync with its SVG source.
+  const salonImage = document.querySelector(".salon-image");
   if (salonImage) {
     salonImage.addEventListener("click", () => {
       salonImage.classList.toggle("expanded");
