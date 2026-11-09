@@ -1,2 +1,5 @@
-User-agent: *
+User-agent: *User-agent: *
+Allow: /
+
+Sitemap: https://chaanetemoso-oss.github.io/blush-and-bloom-beauty-studio/sitemap.xml
 Allow: /
